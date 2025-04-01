@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    parameters {
+    base64File 'FILE'
+  }
+
+    stages {
+        stage('Echo Stage') {
+            steps {
+                echo 'world'
+            }
+        }
+    }
+}
